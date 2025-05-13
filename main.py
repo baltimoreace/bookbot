@@ -1,15 +1,15 @@
+from stats import get_num_words
+
 with open("books/frankenstein.txt") as f:
     text = f.read()
+    word_count = get_num_words(text)
     lowered_text = text.lower()
 
 def sort_on(character_count):
     return character_count["num"]
 
 def main():
-    
-    words = text.split()
-    word_count = len(words)
-        
+
     
     character_count = {}
     for characters in lowered_text:
